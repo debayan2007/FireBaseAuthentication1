@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DCDCDC"
+    tools:context=".ChatActivity">
+
+    <RelativeLayout
+        android:layout_width="409dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="669dp">
+
+        <EditText
+            android:id="@+id/mainchat"
+            android:layout_width="321dp"
+            android:layout_height="48dp"
+            android:background="@drawable/editect2"
+            android:ems="10"
+            android:layout_marginTop="5dp"
+            android:hint="Type a Message..."
+            android:inputType="textPersonName"
+            android:paddingLeft="13dp"
+            android:paddingRight="10dp"
+            android:layout_marginLeft="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.13"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.976" />
+
+        <ImageButton
+            android:id="@+id/send"
+            android:layout_width="64dp"
+            android:layout_height="54dp"
+            android:layout_alignEnd="@+id/mainchat"
+            android:layout_alignRight="@+id/mainchat"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="-68dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="-68dp"
+            android:layout_toEndOf="@+id/mainchat"
+
+            android:background="#DCDCDC"
+            android:src="@drawable/ic_baseline_send_24" />
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:id="@+id/tool4"
+        android:background="@color/purple_200"
+        >
+
+    </androidx.appcompat.widget.Toolbar>
+</RelativeLayout>
